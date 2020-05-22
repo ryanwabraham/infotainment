@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div id="app" data-theme="dark">
+    <main>
+      <ThemePicker />
+      <DriveControls />
+      <CarControls />
+      <MapControls />
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import ThemePicker from "./components/ThemePicker.vue";
+import DriveControls from "./components/DriveControls.vue";
+import CarControls from "./components/CarControls.vue";
+import MapControls from "./components/MapControls.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    ThemePicker,
+    DriveControls,
+    CarControls,
+    MapControls
   }
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "./styles/_main.scss";
+@import "./styles/_icons.scss";
 </style>
