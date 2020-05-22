@@ -1,6 +1,10 @@
-# car-infotainment
+# Infotainment UI
+An imagined self-driving car dashboard UI written in Vue.js.
+Click the wiggling paint roller icon for an easter egg 😉
 
-## Project setup
+### [Live Demo](https://ryanabraham.net/infotainment/)
+
+### Project setup
 ```
 npm install
 ```
@@ -19,6 +23,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
